@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/18.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="aboutForm" action="" novalidate>
+        <h2>О себе</h2>
+        <fieldset>
+          <legend>Имя/Возраст</legend>
+          <ul>
+            <li>
+              <label for="name">Имя:*</label>
+              <input type="text" name="name" placeholder="Иван Иванов" id="name" required>
+            </li>
+            <li>
+              <label for="age">Возраст:</label>
+              <input type="number" name="age" placeholder="27" id="age">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Контакты</legend>
+          <ul>
+            <li>
+              <label for="email">E-mail:*</label>
+              <input id="email" type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required>
+            </li>
+            <li>
+              <label for="number">Телефон:*</label>
+              <input type="tel" name="phone" placeholder="+7 000 000-00-00" id="number" maxlength="21" required>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="hobbies">
+          <label class="label-hobbies" for="message">Увлечения:</label>
+          <textarea name="comment" id="message"></textarea>
+        </div>
+        <fieldset>
+          <legend>Предпочтения</legend>
+          <ul>
+            <li>
+              <input type="radio" name="preference" id="front" value="frontend" checked>
+              <label for="front">Фронтенд-разработка</label>
+            </li>
+            <li>
+              <input type="radio" name="preference" id="back" value="backend">
+              <label for="back">Бэкенд-разработка</label>
+            </li>
+            <li>
+                <input type="radio" name="preference" id="full" value="fullstack">
+                <label for="full">ФуллСтэк-разраотка</label>
+              </li>
+          </ul>
+        </fieldset>
+
+        <p>* — Обязательные поля</p>
+        <p id="error" style="color: red; text-align: center; display: none; margin: 20px 0;">Не все поля заполнены корректно!</p>
+        <div class="submit-btn">
+          <button type="submit">Отправить</button>
+        </div>
+
+      </form>
+
+      <script src="/scripts/18.js"></script>
+</body>
+</html>

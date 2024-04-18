@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/14.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="black">
+        <div id="darker"onclick="hideBlack()"></div>
+        <div class="scoped">
+            <img class="scoped-img" onclick="hideBlack()" src="/gallery/img1.jpg">
+            <img class="scoped-img" onclick="hideBlack()" src="/gallery/Mops1.jpg">
+            <img class="scoped-img" onclick="hideBlack()" src="/gallery/Mops2.jpg">
+            <img class="scoped-img" onclick="hideBlack()" src="/gallery/Mops3.png">
+        </div>
+    </div>
+    <div class="container">
+        <div class="slides">
+            <div class="mySlides">
+                <img src="/gallery/img1.jpg" onclick="scope()" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <img src="/gallery/Mops1.jpg" onclick="scope()" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <img src="/gallery/Mops2.jpg" onclick="scope()" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <img src="/gallery/Mops3.png" onclick="scope()" style="width:100%">
+            </div>
+            
+        </div>
+
+        <div class="next-prev">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="btn-scope">
+            <button onclick="scope()">Увеличить +</button>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="/gallery/img1.jpg" style="width:100%" onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/gallery/Mops1.jpg" style="width:100%" onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/gallery/Mops2.jpg" style="width:100%" onclick="currentSlide(3)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/gallery/Mops3.png" style="width:100%" onclick="currentSlide(4)">
+            </div>
+        </div>
+
+        
+    </div>
+        
+
+
+    <script src="/scripts/14.js"></script>
+</body>
+</html>

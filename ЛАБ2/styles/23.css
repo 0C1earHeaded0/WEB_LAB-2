@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+}
+
+.align-section {
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px 20px;
+    text-align: center;
+    border: 1px solid;
+    
+}
+
+th {
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+.search {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.search label {
+    white-space: nowrap;
+    margin-right: 4px;
+}
+
+.search input {
+    width: 100%;
+}
+
+th:hover {
+    background-color: rgb(29, 197, 141);
+}
+
+.down::before {
+    content: "⇩ ";
+}
+
+.up::before {
+    content: "⇧ ";
+}

@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: monospace;
+    z-index: -1;
+    /* display: inline-block; */
+}
+
+nav {
+    padding: 22px;
+    background-color: rgba(94, 168, 253, 1);
+    min-width: 100%;
+    display: inline-block;
+}
+
+.burger-ico{
+    display: none;
+}
+
+.nav-items {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 100px;
+}
+
+.links a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.article-pattern {
+    /* display: inline-block; */
+    overflow: auto;
+    height: auto;
+    margin: 40px 40px 0 40px;
+    background-color: rgba(159, 220, 255, 0.5);
+    padding: 20px;
+    border-radius: 14px;
+    max-width: 1200px;
+}
+
+.article-pattern:first-child {
+    margin: 0px 40px 0 40px;
+}
+
+.article-pattern:last-child {
+    margin: 40px;
+}
+
+.welcome-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.welcome-text h1 {
+    font-size: 5vw;
+    text-align: center;
+    margin: 40px 20px;
+    max-width: 900px;
+    line-height: 20px;
+}
+
+.article-pattern h3 {
+    margin-bottom: 15px;
+    font-size: 4vw;
+    text-align: center;
+    border-bottom: solid 2px rgb(37, 37, 92);
+    border-radius: 5px;
+}
+
+.article-pattern p {
+    font-size: 2vw;
+    text-align: justify;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.article-pattern a {
+    float: inline-end;
+    text-decoration: underline;
+    color: black;
+    font-size: 2vw;
+}
+
+.small-text {
+    font-size: 2vw;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1440px) {
+    .links a {
+        font-size: 1vw;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+    
+}
+
+
+@media (min-width: 900px) {
+    .welcome-text h1 {
+        font-size: 44px;
+    }
+
+    .small-text {
+        font-size: 18px;
+    }
+
+    .article-pattern h3 {
+        font-size: 36px;
+    }
+
+    .article-pattern a {
+        font-size: 22px;
+        
+    }
+
+    .article-pattern p {
+        font-size: 22px;
+    }
+
+}
+
+
+@media (max-width: 740px) {
+    header {
+        z-index: 1;
+        position: relative;
+    }
+
+    body {
+        z-index: -1;
+    }
+
+    .burger-ico {
+        display: block;
+        float:right;
+        align-items: center;
+    }
+
+    .burger-ico:hover {
+        margin-right: 5px;
+    }
+
+    .nav-items {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .links a {
+        display: none;
+    }
+
+    .burger-menu {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -140px;
+        justify-content: center;
+        background-color: rgb(69, 138, 170);
+        display: flex;
+    }
+
+    .forward {
+        animation: forward 0.5s forwards;
+    }
+
+    .backward {
+        animation: backward 0.5s backwards;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .burger-menu-item {
+        position: relative;
+        text-align: center;
+        padding: 10px 0;
+        margin: 4px 0;
+        height: auto;
+    }
+
+    .burger-menu-item:hover {
+        background-color: rgba(51, 164, 209, 1);
+    }
+
+    .burger-menu-item:hover a {
+        font-size: 17px;
+    }
+
+    .burger-menu-item a {
+        text-decoration: none;
+        color: white;
+        height: 100%;
+        size: 100%;
+    }
+
+    .burger-menu-item a:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .article-pattern p, .article-pattern a {
+        font-size: 14px;
+    }
+
+    .article-pattern h3 {
+        font-size: 18px;
+    }
+
+    .welcome-text h1 {
+        font-size: 20px;
+    }
+
+    .small-text {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .article-pattern {
+        margin: 20px 20px 0 20px;
+    }
+
+    .article-pattern:first-child {
+        margin: 0px 20px 0 20px;
+    }
+    
+    .article-pattern:last-child {
+        margin: 20px;
+    }
+}
+
+@keyframes forward {
+    from {
+        top: -140px;
+    }
+
+    to {
+        top: 74px;
+    }
+}
+
+@keyframes backward {
+    from {
+        top: 74px;
+    }
+
+    to {
+        top: -140px;
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1cea049b-f899-4835-b1fe-051a35c5d8ce&lang=ru_RU"
+    type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(function(){
+            var moscow_map = new ymaps.Map("first_map", {
+                center: [46.957469, 142.725785],
+                zoom: 7
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Карта Южно-Сахалинска</p>
+    <div id="first_map" style="width:400px; height:300px"></div>
+</body>
+</html>

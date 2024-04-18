@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/19.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+            <div class="nav-items">
+
+                <div class="logo">
+                    <img src="" alt="logo">
+                </div>
+
+                <div class="links">
+                    <a href="">Main</a>
+                    <a href="">Contacts</a>
+                    <a href="">About Us</a>
+                    <a href="">Support</a>
+                    <a href="">AnotherLink</a>
+                </div>
+
+                <div id="burgerIco" class="burger-ico">
+                    <img id="bIco" width="30px" src="/burger.png" alt="">
+                </div>
+                
+            </div>
+
+            
+
+        </nav>
+
+        <div id="burgerMenu" class="burger-menu">
+
+            <div class="container">
+
+                <div class="burger-menu-item">
+                    <a href="">Main</a>
+                </div>
+                <div class="burger-menu-item">
+                    <a href="">Contacts</a>
+                </div>
+                <div class="burger-menu-item">
+                    <a href="">About Us</a>
+                </div>
+                <div class="burger-menu-item">
+                    <a href="">Support</a>
+                </div>
+                <div class="burger-menu-item">
+                    <a href="">AnotherLink</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    
+    <script>
+        document.getElementById('burgerIco').addEventListener("click", function() {
+            let burgerMenu = document.getElementById('burgerMenu');
+
+            let bIco = document.getElementById('bIco');
+
+            
+
+            if (burgerMenu.classList.contains('forward')) {
+                bIco.setAttribute('src', '/burger.png')
+                burgerMenu.classList.remove('forward');
+                burgerMenu.classList.add('backward');
+            } else {
+                bIco.setAttribute('src', '/crest.png')
+                burgerMenu.classList.remove('backward');
+                burgerMenu.classList.add('forward');
+            }
+
+            
+            
+        })
+    </script>
+</body>
+</html>

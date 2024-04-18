@@ -1,0 +1,48 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(210deg, rgba(0,43,43,1) 0%, rgba(9,121,117,1) 30%, rgba(0,253,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-size: larger;
+    font-family: sans-serif;
+    color: white;
+}
+
+table {
+    margin: auto;
+    background-color: aquamarine;
+    width: 1000px;
+    border-collapse: separate;
+    border-spacing: 5px;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+th {
+    color: black;
+}
+
+th, tr, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(45, 192, 167);
+}
+
+td {
+    font-size: 36px;
+}
+
