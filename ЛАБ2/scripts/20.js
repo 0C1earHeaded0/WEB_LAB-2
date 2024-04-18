@@ -1,7 +1,3 @@
-
-
-
-
 const canvas = document.getElementById('canvas');
 
 if (canvas.getContext) {
@@ -10,13 +6,13 @@ if (canvas.getContext) {
     smile.strokeStyle = "blue";
 
     smile.beginPath();
-    smile.arc(75, 75, 50, 0, Math.PI * 2); // Внешняя окружность
+    smile.arc(75, 75, 50, 0, Math.PI * 2);
     smile.moveTo(110, 75);
-    smile.arc(75, 75, 35, 0, Math.PI, false); // рот (по часовой стрелке)
+    smile.arc(75, 75, 35, 0, Math.PI, false); 
     smile.moveTo(65, 65);
-    smile.arc(60, 65, 5, 0, Math.PI * 2); // Левый глаз
+    smile.arc(60, 65, 5, 0, Math.PI * 2); 
     smile.moveTo(95, 65);
-    smile.arc(90, 65, 5, 0, Math.PI * 2); // Правый глаз
+    smile.arc(90, 65, 5, 0, Math.PI * 2);
     smile.stroke();
 
     const rect = canvas.getContext('2d');
